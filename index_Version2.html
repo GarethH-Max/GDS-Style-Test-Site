@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GDS Style Webpage Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- GDS styles via CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/govuk-frontend@5.1.0/govuk/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      background: #fff;
+    }
+  </style>
+</head>
+<body class="govuk-template__body">
+  <header class="govuk-header" role="banner" data-module="govuk-header">
+    <div class="govuk-header__container govuk-width-container">
+      <div class="govuk-header__logo">
+        <a href="/" class="govuk-header__link govuk-header__link--homepage">
+          <span class="govuk-header__logotype-text">
+            GOV.UK
+          </span>
+        </a>
+      </div>
+      <div class="govuk-header__content">
+        <a href="/" class="govuk-header__link govuk-header__service-name">
+          Example Service
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="govuk-width-container">
+    <main class="govuk-main-wrapper" id="main-content" role="main">
+      <h1 class="govuk-heading-xl">Welcome to the GDS Style Webpage</h1>
+      <p class="govuk-body-l">
+        This is a demonstration of a simple web page using the Government Digital Service (GDS) design system styles.
+      </p>
+
+      <h2 class="govuk-heading-m">Accessible Table Example</h2>
+      <table class="govuk-table">
+        <caption class="govuk-table__caption">List of Fruits and Quantities</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Select</th>
+            <th scope="col" class="govuk-table__header">Fruit</th>
+            <th scope="col" class="govuk-table__header">Quantity</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell govuk-table__cell--numeric">
+              <input class="govuk-checkboxes__input" type="checkbox" id="apple" name="fruit" value="Apple" aria-labelledby="apple-label">
+            </td>
+            <td class="govuk-table__cell" id="apple-label">Apple</td>
+            <td class="govuk-table__cell">10</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell govuk-table__cell--numeric">
+              <input class="govuk-checkboxes__input" type="checkbox" id="banana" name="fruit" value="Banana" aria-labelledby="banana-label">
+            </td>
+            <td class="govuk-table__cell" id="banana-label">Banana</td>
+            <td class="govuk-table__cell">7</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell govuk-table__cell--numeric">
+              <input class="govuk-checkboxes__input" type="checkbox" id="orange" name="fruit" value="Orange" aria-labelledby="orange-label">
+            </td>
+            <td class="govuk-table__cell" id="orange-label">Orange</td>
+            <td class="govuk-table__cell">5</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <form class="govuk-form-group" aria-label="Example form">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">Do you want to receive updates?</legend>
+          <div class="govuk-checkboxes govuk-checkboxes--small">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="receive-updates" name="receive-updates" type="checkbox" value="yes">
+              <label class="govuk-label govuk-checkboxes__label" for="receive-updates">
+                Yes, send me updates
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+  </div>
+
+  <footer class="govuk-footer " role="contentinfo">
+    <div class="govuk-width-container ">
+      <div class="govuk-footer__meta">
+        <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+          <span class="govuk-footer__licence-description">
+            © Crown copyright
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/govuk-frontend@5.1.0/govuk/all.min.js"></script>
+  <script>
+    window.GOVUKFrontend.initAll()
+  </script>
+</body>
+</html>
